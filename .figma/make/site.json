@@ -1,0 +1,10 @@
+{
+  "description": "Explore C & M Monument Company’s memorial designs through an elegant, rotating monument showcase with company information and enquiry options.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
