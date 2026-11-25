@@ -1,4 +1,5 @@
 import { useState } from "react";
+import CarvingAnimation from "./components/CarvingAnimation";
 
 const monuments = [
   {
@@ -55,11 +56,7 @@ function MenuIcon({ open }) {
 function LandingDove() {
   return (
     <span className="landing-dove" aria-hidden="true">
-      <img
-        src="/birds/dove-perched.png"
-        alt=""
-        draggable="false"
-      />
+      <img src="/birds/dove-perched.png" alt="" draggable="false" />
     </span>
   );
 }
@@ -135,12 +132,7 @@ export default function App() {
             <p className="craft-note">Made with care in our family workshop</p>
           </div>
 
-          <figure className="hero-monument">
-            <img
-              src="/monuments/download__1_-removebg-preview.png"
-              alt="Granite angel memorial with roses"
-            />
-          </figure>
+          <CarvingAnimation />
         </section>
 
         <section className="heritage-strip" aria-label="Our promise">
@@ -164,21 +156,21 @@ export default function App() {
               </p>
               <p>
                 C&amp;M Monuments started in 1995 and made sure the business was built on honesty
-                and treating people fairly at a time that is the hardest for them. Our only
-                business is monuments and memorial products and we handle the order from start to
-                finish. Several factors help us to have the best price around. One is being this
-                close to “The Granite Capital of the World” along with the volume we order, two is
-                doing our own sandblast carving and artist etching on all of our monuments, and
-                three we personally install the monuments here locally.
+                and treating people fairly at a time that is the hardest for them. Our only business
+                is monuments and memorial products and we handle the order from start to finish.
+                Several factors help us to have the best price around. One is being this close to
+                “The Granite Capital of the World” along with the volume we order, two is doing our
+                own sandblast carving and artist etching on all of our monuments, and three we
+                personally install the monuments here locally.
               </p>
               <p>
                 Since we are a Christian based company, we make sure that you are treated like we
                 would want to be treated. We have sold monuments on the internet and shipped them
-                all over the United States for several years and we see a growing need for a
-                quality monument that is not overpriced. Some “companies” try to tell you that you
-                need this and that for a monument and take advantage of you at a time when you are
-                hurting. We will help you design a monument for your budget from the smallest and
-                most simple to the largest and most extravagant.
+                all over the United States for several years and we see a growing need for a quality
+                monument that is not overpriced. Some “companies” try to tell you that you need this
+                and that for a monument and take advantage of you at a time when you are hurting. We
+                will help you design a monument for your budget from the smallest and most simple to
+                the largest and most extravagant.
               </p>
             </div>
           </div>

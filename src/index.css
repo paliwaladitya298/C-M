@@ -141,6 +141,7 @@ html {
   max-width: 1600px;
   margin: 0 auto;
   padding: 3.5vh 2.2vw 0 6.7vw;
+  background: #f8f6f1;
 }
 
 .hero-copy {
@@ -291,28 +292,55 @@ h1 {
   letter-spacing: 0.04em;
 }
 
-.hero-monument {
+.hero-animation {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   min-width: 0;
-  height: calc(100svh - 88px - 3.5vh);
-  min-height: 0;
   align-self: center;
   margin: 0;
-  overflow: hidden;
-  background: #8b6b50;
 }
 
-.hero-monument img {
+.animation-artwork {
   display: block;
-  width: auto;
-  height: auto;
-  max-width: 96%;
-  max-height: 95vh;
-  max-height: min(95vh, 98%);
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  margin: 0;
+  overflow: hidden;
+  background: #f8f6f1;
+}
+
+.animation-artwork img {
+  display: block;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
-  object-position: center;
+  user-select: none;
+}
+
+.animation-replay {
+  min-height: 38px;
+  margin-top: 5px;
+  padding: 0 14px;
+  border: 1px solid rgba(57, 48, 37, 0.55);
+  color: #4f483e;
+  background: transparent;
+  cursor: pointer;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.animation-replay:hover {
+  color: #f5efe4;
+  background: #342d24;
+}
+
+.animation-replay:focus-visible {
+  outline: 2px solid #9b7a42;
+  outline-offset: 3px;
 }
 
 .heritage-strip {
@@ -710,10 +738,6 @@ h1 {
     top: -22px;
   }
 
-  .hero-monument {
-    height: calc(100svh - 74px - 3.5vh);
-  }
-
   .services-grid,
   .monuments-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -760,17 +784,9 @@ h1 {
     margin-top: 27px;
   }
 
-  .hero-monument {
+  .hero-animation {
     width: 100%;
-    height: min(440px, 58svh);
-    min-height: 0;
     margin-top: 16px;
-  }
-
-  .hero-monument img {
-    max-width: 90%;
-    max-height: 58svh;
-    max-height: min(58svh, 98%);
   }
 
   .heritage-strip {
@@ -807,16 +823,6 @@ h1 {
 }
 
 @media (max-width: 420px) {
-  .hero-monument {
-    height: min(360px, 54svh);
-  }
-
-  .hero-monument img {
-    max-width: 86%;
-    max-height: 52svh;
-    max-height: min(52svh, 98%);
-  }
-
   .craft-note {
     margin-top: 16px;
   }
